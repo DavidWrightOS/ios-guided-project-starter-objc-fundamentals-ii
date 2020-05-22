@@ -36,4 +36,14 @@
     // return [_internalTips count];
 }
 
+- (LSITip *)tipAtIndex:(NSUInteger)index
+{
+    return [_internalTips objectAtIndex:index];
+}
+
+- (void)addTip:(LSITip *)aTip
+{
+    return [_internalTips addObject:aTip];
+}
+
 @end
