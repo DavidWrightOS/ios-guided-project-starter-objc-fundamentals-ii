@@ -33,6 +33,7 @@
 - (NSUInteger)tipCount
 {
     return _internalTips.count;
+    // return [_internalTips count];
 }
 
 @end
