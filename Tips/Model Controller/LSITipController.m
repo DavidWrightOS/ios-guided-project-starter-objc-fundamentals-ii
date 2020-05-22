@@ -24,6 +24,8 @@
         _internalTips = [[NSMutableArray alloc] init];
         
 #ifdef DEBUG
+        // FIXME: Test Mode (Remove for production)
+#pragma message "This should be removed eventually!!"
         [self addTestData];
 #endif
     }
@@ -37,6 +39,9 @@
     
     [_internalTips addObject:[[LSITip alloc] initWithName:@"Pizza" total:30. splitCount:8 tipPercentage:25.]];
 }
+
+#pragma mark - Convenience Accessors
+// MARK: ...
 
 - (NSArray<LSITip *> *)tips
 {
